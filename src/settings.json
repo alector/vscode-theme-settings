@@ -1,0 +1,161 @@
+{
+    
+    // "editor.fontFamily": "Hasklig, Ubuntu Mono, Monaco, 'Courier New', monospace",
+    "editor.fontFamily": "'Fira Code iScript', 'Fira Code', Consolas, 'Courier New', monospace",
+    "window.zoomLevel": 0,
+    "terminal.integrated.fontSize": 16,
+    "editor.wordWrap": "on",
+    "pasteImage.path": "${currentFileDir}/${currentFileNameWithoutExt}",
+    "workbench.iconTheme": "file-icons-mac",
+    "editor.fontLigatures": true,
+    "editor.fontWeight": "400",
+    "editor.lineHeight": 26,
+    "editor.fontSize": 16,
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "workbench.colorTheme": "NetBeans Light Theme",    
+
+// settings from "Udemy / React from the rest of us"
+
+    "editor.defaultFormatter":"esbenp.prettier-vscode", 
+    "editor.formatOnSave":true, 
+    "prettier.semi": false,
+    "prettier.printWidth": 9999,
+    "editor.tabSize":2,
+    "prettier.arrowParens": "avoid",
+    "prettier.trailingComma": "none",
+
+    "files.associations":{
+            "*.js":"javascriptreact"
+        },
+        
+
+        
+
+    "workbench.colorCustomizations": {
+        "editor.background": "#fbfbfb",
+        "editor.selectionHighlight": "#F8FDCB",
+        "editor.lineHighlightBackground": "#F1F7FF",
+        "editor.wordHighlightBackgroundBorder": "#A77B8B",
+
+        //"editor.selectionBackground": "#FFD6E5",
+        //"editor.selectionBackgroundBorder": "#A77B8B",
+
+       // "editor.selectionHighlightBackground": "#135564"
+    
+    },
+
+
+    // THEME COLOR SETTINGS
+    // 1. shift + CMD + P -> select "Inspect Editor Tokens & Scope"
+    // 2. then inspect your code to find labels like "entity.other.attribute-name" to change their color
+    // 3. Then come here in textMateRules to add another scope. T
+    // 4. The scope can include a list of strings to change multiple tokens at once
+    
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "entity.other.attribute-name",
+                "settings": {
+                    "fontStyle": "italic",
+                    "foreground": "#7e7d7d",
+                }
+            }, 
+
+            {
+                "scope": [
+                    "string.quoted.double.js",
+                    "string.quoted.single.js"
+                ],
+                "settings": {
+                    "foreground": "#7e7d7d",
+                }
+            }, 
+
+            {
+                "scope": [
+                    "support.type.property-name.json",
+                ],
+                "settings": {
+                   // "foreground": "#88ADF4",
+
+                    "foreground": "#262AD6",
+                    //"fontStyle" : "bold"
+
+                }
+            },
+
+            {
+                "scope": [
+                    "string.quoted.double.json" ],
+                "settings": {
+                    "foreground": "#DE4F02",
+                }
+            },
+
+            {
+                "scope": [
+                    "entity.name.tag" ],
+                "settings": {
+                    "foreground": "#000000",
+                    "fontStyle" : "bold"
+                }
+            },
+
+
+            {
+                "scope": [
+                    "comment.line.double-slash.js" ],
+                "settings": {
+                    "fontStyle" : "italic"
+                }
+            },
+
+            {
+                "scope": [
+                    "variable" ],
+                "settings": {
+                    "foreground": "#a15858",
+                    "fontStyle" : "bold"
+                }
+            },
+
+            {
+                "scope": [
+                    "meta.embedded.expression.js" ],
+                "settings": {
+                    "foreground": "#360099",
+                }
+            }, 
+            {
+                "scope": [
+                    "heading.1.markdown",
+                    "heading.2.markdown",
+                    "heading.3.markdown",
+                    "heading.4.markdown" ],
+                "settings": {
+                    "foreground": "#a15858",
+                    "fontStyle" : "bold",
+                }
+            },
+
+            {
+                "scope": [
+                    "markup.quote.markdown" ],
+                "settings": {
+                    "foreground": "#424242",
+                    "fontStyle" : "italic",
+
+                }
+            }
+
+
+            
+    }
+
+}
+
+
+
+
+
+
