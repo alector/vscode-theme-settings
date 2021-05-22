@@ -1,0 +1,83 @@
+{
+  "editor.fontFamily": "'Fira Code iScript', 'Fira Code', Consolas, 'Courier'",
+  "editor.fontSize": 17,
+  "editor.wordWrap": "on",
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "prettier.semi": false,
+  "prettier.printWidth": 9999,
+  "editor.tabSize": 2,
+  "prettier.arrowParens": "avoid",
+  "prettier.trailingComma": "none",
+
+  "files.associations": {
+    "*.js": "javascriptreact"
+  },
+
+  "workbench.colorCustomizations": {
+    // "statusBar.background" : "#0c0c0e",
+    // "statusBar.foreground" : "#c8e9c5",
+
+    // "statusBar.noFolderBackground" : "#411515",
+    // "statusBar.debuggingBackground": "#263238"
+
+    "editor.background": "#282922"
+    // "editor.selectionHighlight": "#F8FDCB",
+    // "editor.lineHighlightBackground": "#F1F7FF",
+    // "editor.wordHighlightBackgroundBorder": "#A77B8B",
+
+    //"editor.selectionBackground": "#FFD6E5",
+    //"editor.selectionBackgroundBorder": "#A77B8B",
+
+    // "editor.selectionHighlightBackground": "#135564"
+  },
+
+  // THEME COLOR SETTINGS
+  // 1. shift + CMD + P -> select "Inspect Editor Tokens & Scope"
+  // 2. then inspect your code to find labels like "entity.other.attribute-name" to change their color
+  // 3. Then come here in textMateRules to add another scope. T
+  // 4. The scope can include a list of strings to change multiple tokens at once
+
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "entity.other.attribute-name",
+        "settings": {
+          "fontStyle": "italic"
+          // "foreground": "#7e7d7d",
+        }
+      },
+
+      {
+        "scope": ["comment.line.double-slash.js", "storage.type"],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": ["support.type.property-name.json"],
+        "settings": {
+          //   "fontStyle": "italic"
+          //   "foreground": "#88ADF4"
+          // "foreground": "#262AD6",
+          //"fontStyle" : "bold"
+        }
+      },
+      {
+        "scope": ["markup.quote.markdown"],
+        "settings": {
+          "foreground": "#d6d6d6",
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": ["entity.name", "variable.other.readwrite.js", "variable.other.object.js"],
+        "settings": {
+          "fontStyle": "bold"
+        }
+      }
+    ]
+  },
+  "tabnine.experimentalAutoImports": true
+}
